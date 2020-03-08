@@ -1,0 +1,449 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7C7C7C;
+}
+                                        /*Header*/
+#menu li a 
+{
+    font-family: 'Changa One', cursive;
+    color: #333333;
+}
+
+#menu li a:hover, #menu li.active a 
+{
+    color: #2FA0D5;
+    background: none;
+}
+
+#fm-search
+{
+    display: block;
+    width: 169px;
+    height: 32px;
+    border: 1px solid #D5D5D5;
+    padding: 4px, 11px, 6px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin: 0 10px;
+}
+
+#searchword
+{
+    border: none;
+    background: white;
+    box-shadow: 0 0 0;
+    padding: 3px 15px;
+}
+
+#btn-search
+{
+    border: none;
+    width: 25px;
+    background: url(../images/search_button.png) 0 0 no-repeat;
+}
+
+#social a
+{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0;
+    height: 25px;
+    width: 27px;
+    cursor: pointer;    
+}
+
+#social a.twitter
+{
+    background: url(../images/twitter.png) 0 0 no-repeat;
+}
+#social a.twitter:hover
+{
+    background: url(../images/twitter_active.png) 0 0 no-repeat;
+}
+
+#social a.facebook
+{
+    background: url(../images/facebook.png) 0 0 no-repeat;
+}
+#social a.facebook:hover
+{
+    background: url(../images/facebook_active.png) 0 0 no-repeat;
+}
+/*Header*/
+
+/*Banner*/
+
+#banner
+{
+    background: url(../images/bg_slider.gif) center bottom repeat;
+    color: white;
+    padding: 110px 0 40px;
+}
+
+#banner h4
+{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: "Changa One", cursive;
+    font-weight: 900; /*in đậm*/
+    letter-spacing: 1px; /*khoảng cách giữa các kí tự*/
+    color: white;
+}
+
+#btn-menu
+{
+    display: inline-block; /*box xung quanh chữ, block-box tràn ra hết màn hình*/
+    font: 30px 'Changa One', cursive;
+    color: white; /*màu chữ*/
+    line-height: 36px;
+    background-color: #fa97c2;
+    padding: 14px 62px ; /*khoảng cách từ box tới chữ*/
+    border-radius: 14px; /*viền tròn cong cong quanh chữ*/
+    text-transform: uppercase; /*chữ bên trong luôn in hoa*/
+    text-decoration: none; /*link không có đường gạch dưới*/
+    margin: 30px 0; /*cách chữ ở phía trên (trên dưới 30px trái phải 0px */
+}
+
+#dots
+{
+    list-style: none; /*không hiển thị dạng danh sách nữa*/
+    padding: 0; /*mặc định ul sẽ có khoảng cách nên sẽ tắt luôn*/
+    text-align: center; /*nội dung trong ul canh giữa màn hình*/
+    height: 19px;
+    line-height: 19px; /*1 khối cao 19px*/
+}
+
+#dots li
+{
+    display: inline-block; /*hiển thị trên 1 hàng, không có xuống hàng*/
+    width: 19px;
+    height: 19px;
+    border-radius: 19px;
+    background: white; /*thẻ li là hình tròn trắng, thẻ span là hình tròn màu xanh lá cây phía bên trong li*/
+    margin: 0 2px;
+    position: relative; /*vị trí tương đối so với trang web, khi thay đổi kích thước trang thì nó sẽ thay đổi theo*/
+}
+
+#dots li span
+{
+    border-radius: 9px;
+    width: 9px;
+    height: 9px;
+    position: absolute; /*vị trí tuyệt đối so tới thẻ li, luôn nằm trong thẻ li, cách lề trên 5px lề trái 5px*/
+    top: 5px;
+    left: 5px;
+}
+
+#dots li.active span, #dots li:hover span /*hình tròn chỉ đổi màu khi active và hover lên*/
+{
+    box-shadow: 0;
+    background: #73c926;
+}
+
+#menu li
+{
+    margin-left: 25px;
+    padding: 0;
+}
+                                /*Banner*/
+
+                                /*Main*/
+
+h4
+{
+    font-family: 'Changa One', cursive;
+    font-weight: 400; /*in đậm*/
+    color: #333333;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+a.readmore
+{
+    text-decoration: underline; /*có đường gạch dưới*/
+    color: #2fa0d5;
+}
+                                /*Main*/
+
+                                /*About*/
+
+div.about
+{
+    background: #fa97c2;
+    color: #814e64;
+
+}
+
+h3
+{
+    font-family: 'Changa One', cursive;
+    font-weight: 400; /*in đậm*/
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+div.about div > img
+{
+    float: left;
+    margin: 20px;
+}
+
+#fm-signup
+{
+    border: 3px dashed #814e64;
+    padding: 20px 10px;
+    border-radius: 10px;
+    overflow: auto; /*nội dung trong form không bị tràn ra*/
+}
+
+#fm-signup h3
+{
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#fm-signup input
+{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    padding: 10px;
+    box-shadow: 0 0 0;
+    margin: 6px 0;
+}
+
+#fm-signup button
+{
+    float: right;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background: #333333;
+    font: 22px 'Changa One', cursive;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 10px 34px;
+}
+                                    /*About*/
+
+                                    /*NEWS*/
+
+.date
+{
+    text-align: center;
+    background: #73c926;
+    color: white;
+    font: 30px 'Changa One', cursive;
+    line-height: 30px;
+    padding: 8px 0;
+    border-radius: 14px;
+    margin: 10px 0;
+}
+                                    /*NEWS*/
+
+                                    /*Footer*/
+
+footer
+{
+    background: url(../images/bg.gif) 0 center repeat;
+    text-align: center;
+    padding: 20px;    
+}
+
+footer li
+{
+    display: inline-block; /*danh sách hiển thị trên 1 hàng*/
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer a
+{
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+footer nav a
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: pink;
+    text-decoration: none;
+}
+
+footer li #a-active
+{
+    color: pink;
+    text-decoration: none;
+}
+
+footer div a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+                                    /*Footer*/
+
+                                /*ABOUT page*/
+
+/*Banner*/
+
+#small-banner
+{
+    background: url(../images/bg_slider.gif) center top repeat;
+    height: 7px;
+    content: "";
+}
+
+/*About us*/
+.round-img
+{
+    border: none;
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/*Testimonials*/
+#testimonials .col
+{
+    background: url(../images/quot.png) top left no-repeat;
+    padding-left: 50px;
+}
+
+#testimonials h3
+{
+    margin-left: -10px;
+    color: white;
+}
+
+.text-while
+{
+    color: white;
+}
+
+/*Our team*/
+
+.img-rounded
+{
+    border: none;
+    border-radius: 15px;    
+}
+
+                                /*MENU PAGE*/
+
+#filter li
+{
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+#filter a:hover
+{
+    text-decoration: none;
+}
+
+.img-thumbnail
+{
+    border-top: none;
+    margin: 0 0 15px;
+}
+
+                                /*BLOG PAGE*/
+
+.blog-image
+{
+    border: 1px solid brown;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+    padding: 2px;
+}
+
+#box-blog2,#box-blog3
+{
+    clear: both;
+}
+
+#list-categories
+{
+    list-style-image: url(../images/marker1.png);
+    margin-left: -20px;       
+}
+
+#list-categories a
+{
+    text-decoration: none;
+    color: #888888	;
+}
+
+#list-categories a:hover
+{
+    color: #33FF66;
+}
+
+                                /*Contact page*/
+.sendcopy
+{
+    text-align: right;
+}
+
+.sendcopy a
+{
+    text-decoration: underline;
+}
+
+                                    /*Readmore Page*/
+
+.socials-share {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.socials-share a {
+    padding: 4px 15px;
+    color: #fff;
+    line-height: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.socials-share span.fa {
+    margin-right: 1px;
+}
+
+.bg-twitter {
+    background: #00acee;
+}
+
+.bg-twitter:hover, .bg-twitter:focus {
+    background: #0b93c7;
+}
+
+.bg-email {
+    background: #dd5348;
+}
+
+.bg-email:hover, .bg-email:focus {
+    background: #ce3f34;
+}
